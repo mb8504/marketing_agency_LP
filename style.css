@@ -9,6 +9,7 @@ body {
     font-size: 1rem;
     line-height: 1.2;
     background-color: whitesmoke;
+    color: #333;
 }
 
 img {
@@ -16,15 +17,95 @@ img {
 }
 
 h1, h2 {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
+}
+
+ul {
+    list-style-type: none;
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 20px;
+    align-items: center;
 }
 
 .navbar {
+    background-color: white;
+    color: #333;
+    height: 3.5rem;
+}
 
+.navbar .logo {
+    font-family: 'Splash', cursive;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: #727272;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.container .nav {
+    display: none;
+}
+
+.navbar ul a:hover {
+    color: black;
+}
+
+.nav-toggle:checked ~ ul {
+    display: block;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    position: relative;
+    top: 0;
+    right: 0;
+    border: 1px solid red;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.primary-header {
+    min-height: 400px;
+}
+
+.primary-header h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.primary-header img {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.info-cards {
+    background-color: #121212;
 }
