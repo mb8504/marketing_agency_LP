@@ -8,7 +8,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     line-height: 1.2;
-    background-color: whitesmoke;
+    background-color: white;
     color: #333;
 }
 
@@ -31,21 +31,21 @@ ul {
     align-items: center;
 }
 
+
+
+/* Start Navbar CSS */
 .navbar {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     background-color: #333;
     color: white;
     flex-direction: column;
-    /* align-items: start; */
 }
 
 .logo {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     margin: 1rem;
     font-family: 'Splash', cursive;
-    /* font-size: 1.6rem; */
     font-weight: bold;
 }
 
@@ -62,10 +62,6 @@ ul {
     flex-direction: column;
 }
 
-/* .navbar-links ul li {
-    text-align: center;
-} */
-
 .navbar-links li {
     list-style: none;
     font-size: 1rem;
@@ -77,7 +73,6 @@ ul {
     text-decoration: none;
     color: white;
     padding: 0.5rem;
-    /* padding: .5rem 1rem; */
 }
 
 .navbar a:hover {
@@ -92,7 +87,6 @@ ul {
     position: absolute;
     top: 1.5rem;
     right: 1rem;
-    /* display: none; */
     flex-direction: column;
     justify-content: space-between;
     width: 40px;
@@ -143,7 +137,11 @@ ul {
         text-align: right;
     }
 }
+/* END */
 
+
+
+/* Start Header CSS */
 .primary-header {
     min-height: 400px;
 }
@@ -161,6 +159,47 @@ ul {
     margin-bottom: 16px;
 }
 
+.primary-header .container button {
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 0.8rem;
+    font-family: sans-serif, Arial, Helvetica;
+    border-radius: 0.3em;
+}
+
+.primary-header button:hover {
+    background-color: #ff0263;
+}
+
+@media (min-width: 640px) {
+    .primary-header .container {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+    }
+    .primary-header h1 {
+        font-size: 1.6rem;
+    }
+    img {
+        width: 60%;
+        display: block;
+        height: auto;
+    }
+}
+
+@media (min-width: 1050px) {
+    .primary-header h1 {
+        font-size: 2.4rem;
+    }
+}
+/* END */
+
+
+
+/* Start info-cards/services CSS */
 .info-cards {
     background-color: #121212;
     color: white;
@@ -171,12 +210,6 @@ ul {
     padding-top: 20px;
 }
 
-/* .card .material-symbols-outlined {
-    margin-right: 10px;
-    align-items: center;
-    background-color: white;
-} */
-
 .material-symbols-outlined {
     padding-right: 10px;
     font-variation-settings:
@@ -185,6 +218,8 @@ ul {
     'GRAD' 0,
     'opsz' 48
 }
+/* END */
+
 
 
 h2 {
